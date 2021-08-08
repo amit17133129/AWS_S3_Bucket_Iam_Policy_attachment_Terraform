@@ -20,7 +20,7 @@ names of  bucket, users, roles should be passed as input parameters from main mo
 
 ----------------------------------------------------------------------------------------------------------------------------------------
 Below is the tree graph you will find whch i created while creating this whole terraform IAC
-
+```
 C:.
 └───main_module          **main module**
     ├───.terraform
@@ -34,6 +34,7 @@ C:.
     ├───Create_Bucket
     ├───Create_Role_Assign_Roles
     └───Create_User
+```
 ----------------------------------------------------------------------------------------------------------------------------------------
 
 - We have to create first module folder for creating all the module. Inside module folder we have `main_module`, `main.tf`, `variable.tf`.
