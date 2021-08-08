@@ -54,6 +54,8 @@ C:.
 IAM Policy for `IAM_user1`
 
 As you can see below that, i have added only `AbortMultipartUpload`, `Get`, `List`, `Delete` and `PutObject` Permission in Actions section.
+
+```
 policy = <<EOF
 {
   "Version": "2012-10-17",
@@ -72,12 +74,13 @@ policy = <<EOF
   ]
 }
 EOF
-
+```
 ----------------------------------------------------------------------------------------------------------------------------------------
 
 IAM Policy for `IAM_user2`
 As you can see below that, i have added only `Get` and `List` Permission in Actions section.
-
+	      
+```
 policy = <<EOF
 {
   "Version": "2012-10-17",
@@ -93,7 +96,8 @@ policy = <<EOF
   ]
 }
 EOF
-
+```
+	      
 ----------------------------------------------------------------------------------------------------------------------------------------
 Now we have to attach the policy to IAM Users. So, the detailed description you will find in `Create_Role_Assign_Roles` module.
 After Seeting this code hit below commands.
