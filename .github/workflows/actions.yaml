@@ -1,4 +1,10 @@
 
+name: Deploy Infrastructure
+on:
+  push:
+    branches:
+      - master
+
 jobs:
   terraform_apply:
     runs-on: ubuntu-latest
